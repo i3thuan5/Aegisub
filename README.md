@@ -81,6 +81,51 @@ wxWidgets is located in vendor/wxWidgets, and can be built like so:
 Once the dependencies are installed, build Aegisub with `autoreconf && ./configure --with-wxdir=/path/to/Aegisub/vendor/wxWidgets && make && make osx-bundle`.
 `autoreconf` should be skipped if you are building from a source tarball rather than `git`.
 
+## Ubuntu bionic 18.4
+
+### Update wxGTK3 to 3.1.2
+Referred from issue [#121](https://github.com/Aegisub/Aegisub/issues/121#issuecomment-500085028)
+
+```
+sudo apt-add-repository 'deb http://repos.codelite.org/wx3.1.2/ubuntu/ bionic universe'
+sudo apt-key adv --fetch-keys http://repos.codelite.org/CodeLite.asc
+sudo apt-get update
+sudo apt-get install libwxbase3.1-0-unofficial3 \
+                 libwxbase3.1unofficial3-dev \
+                 libwxgtk3.1-0-unofficial3 \
+                 libwxgtk3.1unofficial3-dev \
+                 wx3.1-headers \
+                 wx-common \
+                 libwxgtk-media3.1-0-unofficial3 \
+                 libwxgtk-media3.1unofficial3-dev \
+                 libwxgtk-webview3.1-0-unofficial3 \
+                 libwxgtk-webview3.1unofficial3-dev \
+                 libwxbase3.1-0-unofficial3-dbg \
+                 libwxgtk3.1-0-unofficial3-dbg \
+                 libwxgtk-webview3.1-0-unofficial3-dbg \
+                 libwxgtk-media3.1-0-unofficial3-dbg \
+                 wx3.1-i18n \
+                 wx3.1-examples
+```
+
+Check that the version of wx is all updated to 3.1
+`apt list '*wx*' --installed`
+if not, try
+`sudo apt autoremove`
+
+
+### Build
+Clone the repo from git 
+`git clone git@github.com:Aegisub/Aegisub.git`
+
+```
+cd Aegisub/
+sudo apt-get install  autoconf autopoint automake libass-dev luajit -y
+./autogen.sh
+./configure
+make
+```
+
 ## Updating Moonscript
 
 From within the Moonscript repository, run `bin/moon bin/splat.moon -l moonscript moonscript/ > bin/moonscript.lua`.
