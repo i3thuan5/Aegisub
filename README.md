@@ -109,15 +109,21 @@ sudo apt-get install libwxbase3.1-0-unofficial3 \
 ```
 
 Check that the version of wx is all updated to 3.1
-`apt list '*wx*' --installed`
+```
+apt list '*wx*' --installed
+```
 if not, try
-`sudo apt autoremove`
+```
+sudo apt autoremove
+```
 
 
 ### Build
 Clone the repo from git 
-`git clone git@github.com:Aegisub/Aegisub.git`
-
+```
+git clone git@github.com:Aegisub/Aegisub.git
+```
+Then run
 ```
 cd Aegisub/
 sudo apt-get install  autoconf autopoint automake libass-dev luajit -y
