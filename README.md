@@ -130,6 +130,11 @@ sudo apt-get install  autoconf autopoint automake libass-dev luajit intltool -y
 ./autogen.sh
 ./configure
 make
+make install
+```
+Open from terminal
+```
+argisub
 ```
 
 ## Updating Moonscript
