@@ -126,7 +126,7 @@ git clone git@github.com:Aegisub/Aegisub.git
 Then run
 ```
 cd Aegisub/
-sudo apt-get install  autoconf autopoint automake libass-dev luajit -y
+sudo apt-get install  autoconf autopoint automake libass-dev luajit intltool -y
 ./autogen.sh
 ./configure
 make
