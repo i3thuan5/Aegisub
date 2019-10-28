@@ -119,7 +119,7 @@ sudo apt autoremove
 
 
 ### Build
-Clone the repo from git 
+Clone the repo from git (use PR #134)
 ```
 git clone git@github.com:Aegisub/Aegisub.git
 ```
