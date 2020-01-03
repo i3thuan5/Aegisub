@@ -82,7 +82,7 @@ Once the dependencies are installed, build Aegisub with `autoreconf && ./configu
 `autoreconf` should be skipped if you are building from a source tarball rather than `git`.
 
 ### Debian/Ubuntu
-1. Thank @wangqr in issue [#121](https://github.com/Aegisub/Aegisub/issues/121#issuecomment-500085028). Upgrading the wxGTK3 to 3.1.3, by following [this guide](https://wiki.codelite.org/pmwiki.php/Main/WxWidgets31Binaries#toc2) which is linked from the [wxWidgets download page](https://www.wxwidgets.org/downloads/).
+1. Thank @wangqr in issue [#121](https://github.com/Aegisub/Aegisub/issues/121#issuecomment-500085028). Upgrading the wxGTK3 to 3.1.3, by following [this guide](https://wiki.codelite.org/pmwiki.php/Main/WxWidgets31Binaries) which is linked from the [wxWidgets download page](https://www.wxwidgets.org/downloads/).
 2. Dependency.
 ```
 sudo apt install \
