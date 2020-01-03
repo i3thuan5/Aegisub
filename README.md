@@ -93,7 +93,7 @@ sudo apt install -y \
   libffms2-dev libuchardet-dev libfftw3-dev \
   luajit ffmpeg intltool
 ```
-3. `autoreconf && ./configure && make && sudo make install`
+3. `autoreconf && ./configure && make -j 4 && sudo make install`
 
 ## Updating Moonscript
 
