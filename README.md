@@ -91,6 +91,7 @@ sudo apt install -y \
   libboost-dev libboost-chrono-dev libboost-filesystem-dev \
   libboost-locale-dev libboost-regex-dev libboost-thread-dev \
   libffms2-dev libuchardet-dev libfftw3-dev \
+  libice-dev \
   luajit ffmpeg intltool
 ```
 3. `autoreconf && ./configure && make -j 4 && sudo make install`
